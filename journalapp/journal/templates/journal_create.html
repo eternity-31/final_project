@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container d-flex flex-column justify-content-center" style="max-width:600px;" >
+        <h4 class=" mt-5" > Journal item create</h4>
+        <div class="form-group ">
+            <form method="post" >
+                {% csrf_token %}
+                {{form.as_p}}<div class="container d-flex flex-column justify-content-center" >
+                 <button class="btn btn-success my-3">Save</button>
+                <button class="btn btn-primary  my-3" onclick="javascript:history.back();" style="min-width:100px">Cancel</button>
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock content %}

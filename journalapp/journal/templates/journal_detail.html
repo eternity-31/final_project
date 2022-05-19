@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2> JOURNALS</h2>
+
+<ul>
+   <li>{{ journal.title }}</li>
+   <li>{{ journal.description |truncatechars:120 }}</li>
+   <li>{{ journal.date_created }}</li>
+</ul>
+{% endblock %}
